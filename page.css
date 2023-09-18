@@ -90,7 +90,8 @@ main {
 
 .page {
     background-color: white;
-    box-shadow: 0 1px 5px hsla(0, 0%, 0%, 0.2);
+    /* box-shadow: 0 1px 5px hsla(0, 0%, 0%, 0.2); */
+    box-shadow: none;
     overflow: auto;
     display: flex;
     font-size: var(--page-font-size);
@@ -156,28 +157,45 @@ main {
 }
 
 /* #endregion */
+p {
+    /* background-color: aquamarine; */
+    background: transparent!important;
+    box-shadow: none !important;
+    box-shadow: 0
+}
+#chart  {
+    /* background-color: rgb(75, 87, 83); */
+    /* border: 12px solid #666666; */
+}
+ img {
+    background: transparent!important;
+    box-shadow: none !important;
+} 
+
 
 table {
-  width: 100%;
+  /* width: 100%; */
   /* for table */
-  table-layout: fixed;
+  /* table-layout: auto; */
+  /* margin-top: 0mm; */
+  /* border: 12px solid cadetblue; */
   border-collapse: collapse;
+  /* background-color: aquamarine; */
+
 }
-table {
+/* table {
   border-collapse: collapse;
   width: 100%;
-  border: 1px solid #ddd;
-}
-img {
-  display: block;/* for the gap*/
-  max-width: 100%;
-  margin: auto;
-}
+  border: 1px solid #000000;
+  margin: 0mm;
+  padding: 0mm;
+} */
 
-th, td {
-  text-align: center;
-  padding: 8px;
-}
+/* th, td {
+  padding: 0px;
+  margin: 0px;
+  background-color: blue;
+} */
 
 /* #region ==================== MEDIA: PRINT */
 
@@ -198,7 +216,6 @@ th, td {
     .page-content {
         overflow: hidden;
     }
-    
 }
 
 /* #endregion */
